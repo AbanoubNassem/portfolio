@@ -93,8 +93,8 @@
                         <dd id="age"></dd>
                         <dt>Phone:</dt>
                         <dd><a href="tel:+201112303526">+(20) 111-23-03526</a></dd>
-                        <dt>Email:</dt>
-                        <dd><a href="mailto:AbanoubNassemMousa@gmail.com">AbanoubNassemMousa@gmail.com</a></dd>
+                        <dt>Gmail:</dt>
+                        <dd><a href="mailto:AbanoubNassemMousa@gmail.com">AbanoubNassemMousa</a></dd>
                         <dt>Address:</dt>
                         <dd>Cairo,Egypt</dd>
                         <dt>Languages:</dt>
@@ -125,6 +125,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
@@ -141,9 +142,10 @@
             var file = 'views/' + $(this).data('include') + '.html';
             $(this).load(file);
         });
-        loadScript('assets/js/contact.js');
-        loadScript('assets/js/app.js');
-
+        setTimeout(function () {
+            loadScript('assets/js/contact.js');
+            loadScript('assets/js/app.js');
+        }, 1000);
     });
 </script>
 </body>

@@ -39,15 +39,13 @@ function submitForm(e, formName) {
 
     $.ajax({
         type: "POST",
-        url: 'mail.php',
+        url: 'https://formspree.io/abanoubnassemmousa@gmail.com',
         data: formData,
         success: function () {
-            console.log('success');
-            //...
+            swal("Thanks, I will contact you soon.", "", "success");
         },
         error: function () {
-            console.log('error');
-            //...
+            swal("Ops!, Please try again.", "", "error");
         }
     });
 }
