@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Abanoub Nassem Portfolio">
     <meta name="author" content="Abanoub Nassem Mousa">
-    <link id="favicon" rel="shortcut icon" href="fav.png" type="image/png" />
+    <link id="favicon" rel="shortcut icon" href="fav.png" type="image/png"/>
     <title>Abanoub Nassem</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
@@ -19,12 +19,15 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113208900-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-113208900-1');
     </script>
-
 </head>
 <body>
 
@@ -100,8 +103,10 @@
                 </div>
                 <p class="personal-profile__social">
                     <a href="https://github.com/AbanoubNassem" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/abanoubnassem/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                    <a href="https://www.facebook.com/abanoub.nassem" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://www.linkedin.com/in/abanoubnassem/" target="_blank"><i
+                            class="fa fa-linkedin-square"></i></a>
+                    <a href="https://www.facebook.com/abanoub.nassem" target="_blank"><i
+                            class="fa fa-facebook-square"></i></a>
                 </p>
             </div>
         </div>
@@ -116,14 +121,13 @@
 <div data-include="contact"></div>
 
 
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
 <script>
     function loadScript(path) {
         var imported = document.createElement('script');
@@ -137,8 +141,9 @@
             var file = 'views/' + $(this).data('include') + '.html';
             $(this).load(file);
         });
-        loadScript('assets/js/app.js');
         loadScript('assets/js/contact.js');
+        loadScript('assets/js/app.js');
+
     });
 </script>
 </body>
